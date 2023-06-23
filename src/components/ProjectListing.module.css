@@ -1,0 +1,36 @@
+.project-listing {
+    display: grid;
+    gap: 1rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: min(calc(100vw - 2rem), 1280px);
+    height: min(50vh, 560px);
+    gap: 1rem;
+    overflow: scroll;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(calc(100vw - 2rem), 1280px); 
+    height: min(50vh, 560px);
+}
+
+.mobile-search-input {
+    position: relative;
+}
+
+.mobile-search-input::after {
+    content: "";
+    position: absolute;
+    background: #C4C4C4;
+    height: 1px;
+    width: 100%;
+    bottom: -4px;
+    right: 0;
+}

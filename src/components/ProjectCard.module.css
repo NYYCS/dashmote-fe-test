@@ -1,0 +1,67 @@
+:root {
+  --cat-c-primary: #ccf5e3;
+  --cat-c-accent: #00cc74;
+  --cat-f-primary: #f0e5fb;
+  --cat-f-accent: #b37feb;
+  --cat-d-primary: #d1e9ff;
+  --cat-d-accent: #1990ff;
+}
+
+.project-card {
+  position: relative;
+  width: 100%;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(120, 120, 120, 0.15);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 100%;
+  border-radius: 0.5em 0 0 0.5em;
+  top: 0;
+  left: 0;
+}
+
+.project-cell {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.project-name {
+  font-weight: 500;
+  color: #223273;
+  margin-block: auto;
+}
+
+.project-users {
+  color: #52594d;
+  margin-block: auto;
+}
+
+.project-card .cat-c {
+  background: var(--cat-c-primary);
+  color: var(--cat-c-accent);
+}
+.project-card .cat-d {
+  background: var(--cat-d-primary);
+  color: var(--cat-d-accent);
+}
+.project-card .cat-f {
+  background: var(--cat-f-primary);
+  color: var(--cat-f-accent);
+}
+
+.project-card.cat-c::before {
+  background: var(--cat-c-accent);
+}
+.project-card.cat-d::before {
+  background: var(--cat-d-accent);
+}
+.project-card.cat-f::before {
+  background: var(--cat-f-accent);
+}
